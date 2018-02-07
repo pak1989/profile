@@ -1,9 +1,97 @@
 body {
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  background-color:#556;
+  background-image:
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   text-align: center
 }
 
 p {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
+  text-align: justify;
+  font-size: 16px;
+  color: #2f2f3a;
+}
+
+h1 {
+  font-family: Bungee Shade;
+  font-size: 40   px;
+  color: #2f2f3a;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+a {
+  color: black;
+}
+
+#avat {
+  width: 100px;
+  border-radius: 5px;
+}
+
+#mpost {
+  width: 120px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  width: 600px;
+  margin: 30px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.list-inline {
+  padding-left: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 15px;
+  font-size: 100px;
+  text-decoration: none; color:#000;
 }
